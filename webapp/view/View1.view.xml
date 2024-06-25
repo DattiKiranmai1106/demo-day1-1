@@ -1,0 +1,170 @@
+<mvc:View controllerName="com.sap.kt.demo.demoday1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" 	xmlns:core="sap.ui.core"
+    xmlns="sap.m" >
+    <Page id="page" title="{i18n>title}">
+        <content>
+        	<f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			ariaLabelledBy="Title1" >
+            <f:toolbar>
+				<Toolbar id="TB1">
+					<Title id="Title1" text="{i18n>student1}"/>
+					<ToolbarSpacer />
+				</Toolbar>
+			</f:toolbar>
+              <f:content>
+                <Toolbar ariaLabelledBy="Title2">
+					<Title id="Title2" text="{i18n>student2}" textAlign="Center" width="100%"/>
+					<ToolbarSpacer />
+				</Toolbar>
+
+				<Label text="{i18n>student3}" />
+				<Input value="Enter your full name" />
+
+                <Label text="{i18n>student4}" />
+                <Input value="Enter your first name" />
+
+                <Label text="{i18n>student5}" />
+                <Input value="Enter your last name" />
+                <Label text="{i18n>student6}" />
+                <Input value="Enter your student number" />
+
+                <Label text="{i18n>student7}" />
+                <Select
+					selectedKey="{/SelectedListItemKey}">
+                    <core:ListItem key="1" text="Please Select"/>
+					<core:ListItem key="1" text="1st year"/>
+                    <core:ListItem key="2" text="2nd year"/>
+                    <core:ListItem key="3" text="3rd year"/>
+                    <core:ListItem key="4" text="4th year"/>
+				</Select>
+
+                 <Label text="{i18n>student8}" />
+                <Select
+					selectedKey="{/SelectedListItemKey}">
+                    <core:ListItem key="1" text="Please Select"/>
+					<core:ListItem key="1" text="B.Tech"/>
+                    <core:ListItem key="2" text="Bsc"/>
+                    <core:ListItem key="3" text="Msc"/>
+                    <core:ListItem key="4" text="Phd"/>
+                    <core:ListItem key="4" text="Other"/>           
+				</Select>
+                
+                <Label text="{i18n>student9}" />
+                 <Input value="Ex: myname@gmail.com" />
+
+                  <Label text="{i18n>student10}" />
+                 <Input value="Enter your phone number" />
+
+                 <Label text="{i18n>student11}" />
+			    <DatePicker value="{
+				path: '/date',
+				type: 'sap.ui.model.type.Date'}" />
+
+               	<Label text="{i18n>student12}" labelFor="GroupA" />
+		           <RadioButtonGroup id="GroupA">
+			       <RadioButton text="{i18n>student18}" selected="true" />
+			       <RadioButton text="{i18n>student19}" />
+			       <RadioButton text="{i18n>student20}" />
+			       
+		          </RadioButtonGroup>
+
+                <Label text="{i18n>student13}" />
+				<Input value="Enter your address">
+				</Input>
+				<Input value="HouseNo">
+					<layoutData>
+						<l:GridData span="XL2 L1 M3 S4" />
+					</layoutData>
+				</Input>
+				<Label text="{i18n>student14}" />
+				<Input value="00122">
+					<layoutData>
+						<l:GridData span="XL2 L1 M3 S4" />
+					</layoutData>
+				</Input>
+                <Input value="City" />
+                
+                <Label text="{i18n>student15}"></Label>
+                <Select
+					selectedKey="{/SelectedListItemKey}">
+                    <core:ListItem key="1" text="Please Select"/>
+					<core:ListItem key="1" text="Andhra Pradesh"/>
+                    <core:ListItem key="2" text="Telangana"/>
+                    <core:ListItem key="3" text="Karnataka"/>
+                    <core:ListItem key="4" text="TamilNadu"/>
+                    <core:ListItem key="4" text="Kerala"/> 
+                     <core:ListItem key="4" text="Gujarat"/>           
+				</Select>
+
+                <Label text="{i18n>student16}"></Label>
+                <Select
+					selectedKey="{/SelectedListItemKey}">
+                    <core:ListItem key="1" text="Please Select"/>
+					<core:ListItem key="1" text="India"/>
+                    <core:ListItem key="2" text="Australia"/>
+                    <core:ListItem key="3" text="Island"/>
+                    <core:ListItem key="4" text="Brazil"/>
+                    <core:ListItem key="4" text="Mexico"/> 
+                     <core:ListItem key="4" text="New Zealand"/>           
+				</Select>
+
+                <Label text="{i18n>student17}" />
+				<Input value="Enter your address">
+				</Input>
+				<Input value="ZipCode">
+					<layoutData>
+						<l:GridData span="XL2 L1 M3 S4" />
+					</layoutData>
+				</Input>
+                
+                <Label text="{i18n>student15}"></Label>
+                <Select
+					selectedKey="{/SelectedListItemKey}">
+                    <core:ListItem key="1" text="Please Select"/>
+					<core:ListItem key="1" text="Andhra Pradesh"/>
+                    <core:ListItem key="2" text="Telangana"/>
+                    <core:ListItem key="3" text="Karnataka"/>
+                    <core:ListItem key="4" text="TamilNadu"/>
+                    <core:ListItem key="4" text="Kerala"/> 
+                     <core:ListItem key="4" text="Gujarat"/>           
+				</Select>
+
+                <Label text="{i18n>student16}"></Label>
+                <Select
+					selectedKey="{/SelectedListItemKey}">
+                    <core:ListItem key="1" text="Please Select"/>
+					<core:ListItem key="1" text="India"/>
+                    <core:ListItem key="2" text="Australia"/>
+                    <core:ListItem key="3" text="Island"/>
+                    <core:ListItem key="4" text="Brazil"/>
+                    <core:ListItem key="4" text="Mexico"/> 
+                     <core:ListItem key="4" text="New Zealand"/>           
+				</Select>
+              </f:content>
+            </f:SimpleForm>
+            	<FlexBox
+				height="100px"
+				alignItems="Center"
+				justifyContent="Center">
+				<Button  text="{i18n>student21}" press="onPress"  />
+			</FlexBox>
+				
+        </content>
+    </Page>
+</mvc:View>
